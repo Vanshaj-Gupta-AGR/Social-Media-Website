@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+     <h1>profile-page</h1>
+<p> Name: <%=user.name %></p>
+<p>email: <%=user.email %></p>
+
+
+<% if(locals.user) %>{ %>
+<li>%=user.name</li>
+<li>
+    <a href="/users/sign-out">sign out</a>
+</li>
+}
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
