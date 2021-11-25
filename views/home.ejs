@@ -19,9 +19,16 @@
                 
             <li>
                 <p>
+                    <% if (locals.user && locals.user.id == post.user.id){ %>
+                    <small>
+                        <a href="/posts/destroy/<%= post.id %>">X</a>
+                    </small>
+                    <% } %>
                     <%= post.content %>
-                    <%= post.user.name %>
-                    
+                    <br>
+                    <small>
+                        <%= post.user.name %>
+                    </small>
                 </p>
                 <div class="post-comments">
                     <% if (locals.user){ %>
@@ -33,23 +40,25 @@
 
                     <% } %>
 
-
-
-                        <div class="post-comments-list">
-                            <ul id="post-comment- <%=post._id%>">
+                    <div class="post-comments-list">
+                        <ul id="post-comments-<%= post._id %>">
+                            <% for (comment of post.comments){%>
                                 
-                                <% for(comment of post.comments){%>
-                                    <p>
-                                        <%=comment.content %>
-                                        <br>
-                                        <small>
-                                            <%=comment.user.name %>
-                                        </small>
-                                    </p>
-                                <%} %>
-                            </ul>
-                        </div>
-
+                            <p>
+                                <% if (locals.user && locals.user.id == comment.user.id){ %>
+                                    <small>
+                                        <a href="/comments/destroy/<%= comment.id %>">X</a>
+                                    </small>
+                                    <% } %>
+                                <%= comment.content %>
+                                <br>
+                                <small>
+                                    <%= comment.user.name %>
+                                </small>
+                            </p>    
+                            <%} %>
+                        </ul>
+                    </div>
                 </div>
                 
             </li>
