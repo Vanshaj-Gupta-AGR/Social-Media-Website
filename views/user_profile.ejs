@@ -1,6 +1,13 @@
 <link rel="stylesheet" href="/css/user_profile.css">
 
-<img src="<%=user.avatar%>" alt="<%=user.name%>" width="100">
+
+
+
+
+<img src="<%=user.avatar%>" alt="<%=user.name%>" width="100" id="blah">
+
+
+
 
 
 
@@ -10,12 +17,18 @@
     <form action="/users/update/<%= profile_user.id %>" method="POST" enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Your Name" value="<%= profile_user.name %>" required>
         <input type="email" name="email" placeholder="Your Email" value="<%= profile_user.email %>" required>
-        <input type="file" name="avatar" placeholder="profile-picture">
+        <input type="file" name="avatar" placeholder="profile-picture" id="imgInp">
+        
         <input type="submit"  value="Update">
     </form>
+
+    
+    
     
 <%}else{%>    
     <!-- else show only the profile info -->
     <p><%= profile_user.name %></p>
     <p><%= profile_user.email %></p>
 <%} %>
+
+<script src="/js/preview.js"></script>
