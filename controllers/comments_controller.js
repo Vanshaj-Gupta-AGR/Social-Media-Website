@@ -1,38 +1,48 @@
 const Comment = require('../models/comment');
 const Post = require('../models/post');
+const commentsMailer=require('../mailers/comments_mailer');
 
-module.exports.create = function(req, res){
-    Post.findById(req.body.post, function(err, post){
+module.exports.create = async function(req, res){
 
-        if (post){
-            Comment.create({
-                content: req.body.content,
-                post: req.body.post,
-                user: req.user._id
-            }, function(err, comment){
-                if(err){
-                    console.log(err);
-                    return;
-                }
-                // handle error
-               
+    try{
+       let post= await Post.findById(req.body.post);
+
+            if (post){
+                let comment=await Comment.create({
+                    content: req.body.content,
+                    post: req.body.post,
+                    user: req.user._id
+                });
+                    // handle error
+                   
+            
+                    post.comments.push(comment);
+                    post.save();
+    
+                     comment = await comment.populate("user")
+
+                     console.log(comment)
+                    commentsMailer.newComment(comment);
+    
+    
+                    if(req.xhr){
+                      
+                        return res.status(200).json({
+                            data: {
+                                comment: comment
+                            },messages: "comment created!"
+                        })
+                    }
+    
+                    req.flash('success','comment created');
+                    return res.redirect('/');
+                };
+            }catch(err){
+                console.log(err);
+            }
+    
         
-                post.comments.push(comment);
-                post.save();
-                if(req.xhr){
-                    return res.status(200).json({
-                        data: {
-                            comment: comment
-                        },messages: "comment created!"
-                    })
-                }
-
-                req.flash('success','comment created');
-                return res.redirect('/');
-            });
-        }
-
-    });
+    
 }
 
 module.exports.destroy=function(req,res){
