@@ -11,8 +11,14 @@
                 url: '/posts/create',
                 data: newPostForm.serialize(),
                 success: function(data){
+                  
                     let newPost = newPostDom(data.data.post);
                     $('#posts-list-container>ul').prepend(newPost);
+                        $(':input','#new-post-form')
+                        .not(':button, :submit, :reset, :hidden')
+                        .val('')
+                        removeAttr('checked')
+                        .removeAttr('selected');
                     deletePost($(' .delete-post-button', newPost));
 
                     // call the create comment class
@@ -32,6 +38,8 @@
                 }
             });
         });
+
+       
     }
 
 

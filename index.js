@@ -13,6 +13,7 @@ const passportJWT=require('./config/passport-jwt-strategy');
 const sassMiddleware=require('node-sass-middleware');
 const flash=require('connect-flash');
 const customMware=require('./config/middleware');
+const passportGoggle=require('./config/passport-google-outh2-strategy');
 
 
 
