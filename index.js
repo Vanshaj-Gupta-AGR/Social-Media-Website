@@ -14,7 +14,12 @@ const sassMiddleware=require('node-sass-middleware');
 const flash=require('connect-flash');
 const customMware=require('./config/middleware');
 const passportGoggle=require('./config/passport-google-outh2-strategy');
+//set up chat server to be used with socket.io
+const chatSever=require('http').Server(app);
+const chatSockets=require('./config/chat_socket').chatSockets(chatSever);
+chatSever.listen(5000);
 
+console.log('chat server is listening on port 5000');
 
 
 app.use(sassMiddleware({
