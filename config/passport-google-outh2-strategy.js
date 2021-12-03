@@ -7,9 +7,9 @@ const env = require('./environment');
 
 
 passport.use(new googlestrategy({
-    clientID: env.google_client_id,
-    clientSecret: env.google_client_secret,
-    callbackURL: env.google_call_back_url,
+    clientID: env.google_clientID,
+    clientSecret: env.google_clientSecret,
+    callbackURL: env.google_callbackURL,
    },
    function(accessToken,refreshToken,profile,done){
         User.findOne({email: profile.emails[0].value}).exec(function(err,user){

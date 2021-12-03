@@ -3,3 +3,74 @@
 ::1 - - [03/Dec/2021:19:34:27 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
 ::1 - - [03/Dec/2021:19:34:27 +0000] "GET / HTTP/1.1" 200 4242 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
 ::1 - - [03/Dec/2021:19:35:18 +0000] "GET / HTTP/1.1" 200 3886 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:57:22 +0000] "GET / HTTP/1.1" 200 3110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:57:23 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:57:31 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:57:35 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:57:35 +0000] "GET / HTTP/1.1" 200 4242 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:59:45 +0000] "GET / HTTP/1.1" 200 3886 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:21:59:59 +0000] "GET / HTTP/1.1" 200 3110 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:24:01 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:24:01 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:24:04 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:24:05 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:24:20 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:45 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:47 +0000] "GET /users/profile/61a936b67f00d8d96de4775b HTTP/1.1" 302 72 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:47 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:51 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:51 +0000] "GET / HTTP/1.1" 200 4242 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:56 +0000] "POST /posts/create HTTP/1.1" 302 88 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:56 +0000] "GET / HTTP/1.1" 200 5862 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:57 +0000] "POST /comments/create HTTP/1.1" 302 46 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:25:58 +0000] "GET / HTTP/1.1" 200 6706 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:03 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:03 +0000] "GET / HTTP/1.1" 200 4775 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:05 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:06 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:49 +0000] "GET / HTTP/1.1" 200 4421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:51 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:26:51 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+[0mGET / [32m200[0m 34.365 ms - 4676[0m
+[0mGET /js/toggle_like.js [33m404[0m 3.021 ms - 156[0m
+[0mGET /js/chat_engine.js [33m404[0m 3.590 ms - 156[0m
+[0mGET /js/toggle_like.js [33m404[0m 0.490 ms - 156[0m
+[0mGET /js/chat_engine.js [33m404[0m 0.808 ms - 156[0m
+[0mGET /users/sign-in [36m304[0m 4.522 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 3.047 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4/0AX4XfWjWDfQQ_gSTPB33tLBjKEwwq_ypxe87SVXlSufU1je4IXhVE_lmeOpRZjuH7zrYRg&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email%20openid&authuser=0&hd=student.nitw.ac.in&prompt=none [36m302[0m 466.100 ms - 46[0m
+[0mGET / [32m200[0m 22.299 ms - 7496[0m
+[0mGET /js/toggle_like.js [33m404[0m 5.166 ms - 156[0m
+[0mGET /css/home.css [33m404[0m 6.366 ms - 151[0m
+[0mGET /css/chat_box.css [33m404[0m 6.105 ms - 155[0m
+[0mGET /js/chat_engine.js [33m404[0m 3.796 ms - 156[0m
+[0mGET /js/toggle_like.js [33m404[0m 3.609 ms - 156[0m
+[0mGET /js/chat_engine.js [33m404[0m 3.423 ms - 156[0m
+[0mGET /favicon.ico [33m404[0m 2.472 ms - 150[0m
+[0mGET /css/home.css [33m404[0m 6.163 ms - 151[0m
+[0mGET /css/chat_box.css [33m404[0m 7.302 ms - 155[0m
+::ffff:127.0.0.1 - - [03/Dec/2021:22:34:58 +0000] "GET / HTTP/1.1" 200 4421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:35:03 +0000] "GET /users/profile/61a936b67f00d8d96de4775b HTTP/1.1" 302 72 "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:35:03 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:35:08 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [03/Dec/2021:22:35:08 +0000] "GET / HTTP/1.1" 200 6710 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+[0mGET / [32m200[0m 34.213 ms - 4676[0m
+[0mGET /js/toggle_like.js [33m404[0m 3.441 ms - 156[0m
+[0mGET /js/chat_engine.js [33m404[0m 1.146 ms - 156[0m
+[0mGET /js/toggle_like.js [33m404[0m 0.694 ms - 156[0m
+[0mGET /js/chat_engine.js [33m404[0m 0.695 ms - 156[0m
+[0mGET /users/profile/61a939219208b056c83a28b0 [36m302[0m 8.159 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 11.361 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 11.589 ms - 46[0m
+[0mGET / [32m200[0m 32.686 ms - 7496[0m
+[0mGET /js/toggle_like.js [33m404[0m 12.467 ms - 156[0m
+[0mGET /css/home.css [33m404[0m 18.050 ms - 151[0m
+[0mGET /css/chat_box.css [33m404[0m 14.984 ms - 155[0m
+[0mGET /js/chat_engine.js [33m404[0m 7.582 ms - 156[0m
+[0mGET /css/home.css [33m404[0m 5.716 ms - 151[0m
+[0mGET /css/chat_box.css [33m404[0m 3.457 ms - 155[0m
+[0mGET / [32m200[0m 37.044 ms - 4676[0m
+[0mGET / [36m304[0m 32.343 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 14.757 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 17.415 ms - 46[0m
+[0mGET / [32m200[0m 33.874 ms - 7496[0m
