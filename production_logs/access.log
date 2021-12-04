@@ -74,3 +74,12 @@
 [0mGET /users/sign-in [36m304[0m 14.757 ms - -[0m
 [0mPOST /users/create-session [36m302[0m 17.415 ms - 46[0m
 [0mGET / [32m200[0m 33.874 ms - 7496[0m
+[0mGET / [32m200[0m 115.282 ms - 4676[0m
+[0mGET /favicon.ico [33m404[0m 2.479 ms - 150[0m
+[0mGET /users/sign-in [36m304[0m 20.442 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 25.072 ms - 46[0m
+[0mGET / [32m200[0m 16.877 ms - 7496[0m
+::ffff:127.0.0.1 - - [04/Dec/2021:08:34:10 +0000] "GET / HTTP/1.1" 200 4421 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [04/Dec/2021:08:34:11 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://127.0.0.1:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [04/Dec/2021:08:34:14 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+::ffff:127.0.0.1 - - [04/Dec/2021:08:34:14 +0000] "GET / HTTP/1.1" 200 6710 "http://127.0.0.1:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
